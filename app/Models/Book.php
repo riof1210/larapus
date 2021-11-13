@@ -25,7 +25,7 @@ class Book extends Model
         if ($this->cover && file_exists(public_path('images/books/' . $this->cover))) {
             return asset('images/books/' . $this->cover);
         } else {
-            return asset('images/no_image.png');
+            return asset('images/no_image.jpg');
         }
     }
 
